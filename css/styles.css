@@ -45,7 +45,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
-  overflow-x: hidden; 
 }
 section {
   padding: 5em 2em;
@@ -183,7 +182,7 @@ header {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .nav {
     display: none;
     transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
@@ -286,7 +285,7 @@ header {
   .intro {
     display: grid;
     width: min-content;
-    margin: 4em 0;
+    margin: 4em auto;
     grid-column-gap: 1em;
     grid-template-areas:
       "img title"
@@ -431,8 +430,7 @@ header {
   opacity: 0;
   transition: 0.5s ease;
   background-color: #141a1f;
-
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
@@ -471,17 +469,22 @@ header {
   object-fit: cover;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+  .portfolio{
+    grid-template-columns: repeat(1, minmax(350px, 1fr));
+  }
   .portoflio-overlay {
     position: relative;
-    top: none;
-    height: none;
-    position: relative;
+    top: 0;
     opacity: .9;
+    height: 20%;
     border-bottom: 3px solid #ea8785c5;
+
   }
   .portfolio-item {
-    margin: 20px 0;
+    margin: 20px 10px;
+
+
   }
   .portfolio-item-info {
       padding: 1.2em;
@@ -493,6 +496,7 @@ header {
   .portfolio-item a {
       font-size: .9em;
   }
+
 }
 /* footer */
 
@@ -514,6 +518,7 @@ footer p {
   font-size: 0.7em;
 }
 .footer-title {
+  font-size: .9em;
   font-weight: var(--fw-reg);
   color: var(--clr-text);
   padding: 0.7em;
