@@ -549,7 +549,7 @@ footer p {
 }
 @media (max-size: 700px) {
   .footer-title{
-    padding:0;
+    padding:0 .2em;
     font-size: .9em;
   }
 }
