@@ -50,7 +50,7 @@ section {
   padding: 5em 2em;
 }
 
-@media (max-width:700px){
+@media (max-width: 700px) {
   section {
     padding: 3em 1em;
   }
@@ -62,7 +62,6 @@ img {
 strong {
   font-weight: var(--fw-bold);
 }
-
 
 .btn {
   display: inline-block;
@@ -178,10 +177,11 @@ header {
   right: 1em;
   top: 1em;
 }
-.hamburger{
+.hamburger {
   display: none;
 }
 
+/* Nav toggle for mobiles */
 @media (max-width: 800px) {
   .nav {
     display: none;
@@ -279,8 +279,8 @@ header {
   width: 90%;
 }
 .intro-img {
-    max-height: 400px;
-    margin: 0 auto;
+  max-height: 400px;
+  margin: 0 auto;
 }
 @media (min-width: 600px) {
   .intro {
@@ -310,6 +310,7 @@ header {
   }
 }
 
+/* Services */
 .my-services {
   background-color: var(--clr-bg);
   background-size: cover;
@@ -321,6 +322,7 @@ header {
     url(../img/mountains.jpg);
   color: var(--clr-text);
   text-align: center;
+  border-top: 1px solid #141a1fee;
 }
 
 .section-title-services {
@@ -361,14 +363,15 @@ header {
   }
 }
 
+/* About Me */
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
   text-align: justify;
 }
-.about-me-img{
-    max-height: 400px;
-    margin: 0 auto;
+.about-me-img {
+  max-height: 400px;
+  margin: 0 auto;
 }
 @media (min-width: 600px) {
   .about-me {
@@ -399,6 +402,7 @@ header {
     z-index: 2;
   }
 }
+
 /* My work */
 
 .my-work {
@@ -473,37 +477,33 @@ header {
 @media (max-width: 800px) {
   .my-work {
     padding: 0;
-
   }
-  .portfolio{
+  .portfolio {
     grid-template-columns: repeat(1, minmax(350px, 1fr));
   }
   .portoflio-overlay {
     position: relative;
     top: 0;
-    opacity: .9;
+    opacity: 0.9;
     height: 20%;
     border-bottom: 3px solid #ea8785c5;
-
   }
   .portfolio-item {
     margin: 20px 5px;
-
-
   }
   .portfolio-item-info {
-      padding: 1.2em;
+    padding: 1.2em;
   }
   .portfolio-item p {
-    margin: .2em auto;
-    font-size: .8em;
+    margin: 0.2em auto;
+    font-size: 0.8em;
   }
   .portfolio-item a {
-      font-size: .9em;
+    font-size: 0.9em;
   }
-
 }
-/* footer */
+
+/* Footer */
 
 footer {
   background-color: var(--clr-bg);
@@ -548,8 +548,8 @@ footer p {
   color: var(--clr-accent);
 }
 @media (max-size: 700px) {
-  .footer-title{
-    padding:0 .2em;
-    font-size: .9em;
+  .footer-title {
+    padding: 0 0.2em;
+    font-size: 0.9em;
   }
 }
