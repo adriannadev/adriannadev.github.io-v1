@@ -117,6 +117,7 @@ h3 {
 
 .section-subtitle-intro,
 .section-subtitle-about,
+.section-subtitle-type,
 .footer-title {
   background: var(--clr-accent);
   padding: 0.25em 1em;
@@ -127,7 +128,6 @@ h3 {
 .section-subtitle-work {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
-  margin-bottom: 2em;
 }
 
 /* Header */
@@ -411,6 +411,11 @@ header {
   text-align: center;
   text-transform: lowercase;
   padding: 0 2em;
+}
+
+.section-subtitle-type {
+  width: 50%;
+  margin: 2em auto;
 }
 
 .portfolio {
